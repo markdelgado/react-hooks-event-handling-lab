@@ -1,9 +1,15 @@
 // Code Keypad Component Here
 
-function Keypad (){
+const Keypad = () =>{
+   const handleChange = (event) => {
+    return(console.log(event.target.value))
+   }
     return (
-        <div></div>
-    )
+        <form onChange={handleChange}> 
+            <input type='password'></input>
+        </form>
+        )
+
 }
 
 export default Keypad;
